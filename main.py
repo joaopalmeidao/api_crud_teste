@@ -117,4 +117,4 @@ async def remover_item(item_id: int):
 if __name__ == "__main__":
     ngrok_tunnel = ngrok.connect(8000)
     print('Public URL:', ngrok_tunnel.public_url)
-    uvicorn.run(app, port=8000)
+    uvicorn.run(app, port=8000,host='0.0.0.0')
